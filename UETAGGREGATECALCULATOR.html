@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+UET Aggregate Calculator 2020
+</title>
+</head>
+<style type="text/css">
+	
+input[type=text], input[type=password], input[type=email] {
+  width: 20%;
+  padding: 10px;
+  margin: 0px 0 0px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+#div2 {
+  border: 1px solid black;
+  background-color:orange;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+}
+</style>
+<body>
+<div style="background-color:black;color:Gold;padding:10px; ">
+<h1><center>UET AGGREGATE CALCULATOR 2020 </h1>
+</div>
+<div style="background-color:Silver;color:Black;padding:100px;">
+<form name="myform">
+<h2><center>Total Matric Marks</h2>
+<center>
+<input type="text" placeholder="Enter Total Matric Marks" name="n1">
+<h2><center>Obtained Marks in Matric</h2>
+<input type="text" placeholder="Enter Obtained Matric Marks" name="n2">
+<h2><center>Total Marks of F.Sc / I.Cs Part 1</h2>
+<input type="text" placeholder="Enter Total Intermediate Part-1 Marks" name="n3">
+<h2><center>Obtained Marks of F.Sc / I.Cs Part 1</h2>
+<input type="text" placeholder="Enter Obtained Intermediate Part-1 Marks" name="n4">
+<h2><center>ECAT Marks</h2>
+<input type="text" placeholder="Enter ECAT Marks" name="n5">
+<ul><center>
+<input type="button" value="Calculate" name="" value="ADD" onclick="add()">
+<h1>Congratulations! Your Aggregate for UET is </h1>
+<input type="text" name="result">
+</form>
+<br><h3>As in 2020 the UET as changed its aggregate formula for the admissions. This is a great opportunity for the students to get admission.<br>
+The New Aggregate formula will be the sum of 25%(percent) marks of Matriculation , 45% (percent) marks of Intermediate Part-1 and 30% marks of UET's Entry Test (ECAT).</h3>
+<br><h3>The Calculation of aggregate is done by the formula:<br> <br>
+	<div style="background-color:Silver;color:red;padding:0px;">
+(Marks scored in Matric × 25 /Total Marks of Matric) + (Marks scored in intermediate Part-1 × 45/Total Marks of Part-1) + (Marks scored in entry test × 30/400) = Aggregate.<br><br></div>
+The Formula will help you determine that how much percantage acquired in your entry test will be able to get you across.<br>Students can easily get the chance to have admission in engeering universities if they well for entry test. </h3>
+</div>
+<div id="div2">
+<p><h3>Contact us:</h3><h4>Email: sharrydon6@gmail.com</h4></p>
+</div>
+<script type="text/javascript">
+function add(){
+n1=parseInt(myform.n1.value);
+n2=parseInt(myform.n2.value);
+n3=parseInt(myform.n3.value);
+n4=parseInt(myform.n4.value);
+n5=parseInt(myform.n5.value);
+result=n2*(25/n1)+n4*(45/n3)+n5*(30/400);
+myform.result.value=result;
+}
+</script>
+</body>
+</html>
